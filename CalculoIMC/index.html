@@ -1,0 +1,39 @@
+<html>
+    <head> 
+    <meta charset="UTF-8">
+    <title>Cálculo IMC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <form class="container" id="formulario">
+        <div class="col-md-5">
+        <fieldset class="form-group">
+            <legend>Cálculo IMC</legend>
+            <label for="kilos">Peso:</label>
+            <input type="text" name="kilos" class="form-control" />
+            
+            <label for="centimetros">Tamanho (cm):</label>
+            <input type="text" name="centimetros" class="form-control" />
+            
+            <label for="inputState">Sexo</label>
+            <select id="inputState" class="form-control">
+                <option selected>Masculino</option>
+                <option selected>Feminino</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <div class="alert alert-success seuImc" id="seuImc">
+                Imc:
+            </div>
+
+            <br>
+            <button type="button" onclick="calcularIMC();" class="btn btn-primary">Calcular</button>
+        </fieldset>
+        </div>
+    </form>
+    </body>
+    <script src="index.js"></script>
+</html>
